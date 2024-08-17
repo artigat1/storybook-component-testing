@@ -1,0 +1,17 @@
+@import "../variables/palette";
+
+@function deep-map-get($map, $list...) {
+  @each $key in $list {
+    $map: map-get($map, $key);
+  }
+
+  @return $map;
+}
+
+@function get-palette($color, $value: 500) {
+  @return deep-map-get($palette, $color, $value);
+}
+
+@function get-value($list...) {
+  @return deep-map-get($global, $list...);
+}

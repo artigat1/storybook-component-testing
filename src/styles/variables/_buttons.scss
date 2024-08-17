@@ -1,0 +1,127 @@
+$button-colors: (
+  secondary: (
+    background-color: get-palette(lights, 0),
+    border-color: get-palette(darks, 100),
+    text: get-palette(blue, 500),
+    hover: (
+      background-color: get-palette(blue, 500),
+      border-color: get-palette(darks, 100),
+      text: get-palette(lights, 0),
+    ),
+    focus: (
+      background-color: get-palette(lights, 0),
+      border-color: get-palette(blue, 300),
+      text: get-palette(blue, 500),
+    ),
+    active: (
+      background-color: get-palette(blue, 500),
+      border-color: get-palette(blue, 700),
+      text: get-palette(lights, 0),
+    ),
+  ),
+  primary: (
+    background-color: get-palette(blue),
+    border-color: get-palette(blue),
+    text: get-palette(lights, 0),
+    hover: (
+      background-color: get-palette(blue, 700),
+      border-color: get-palette(blue, 700),
+      text: get-palette(lights, 0),
+    ),
+    focus: (
+      background-color: get-palette(blue, 500),
+      border-color: get-palette(blue, 300),
+      text: get-palette(lights, 0),
+    ),
+    active: (
+      background-color: get-palette(blue, 700),
+      border-color: get-palette(blue, 900),
+      text: get-palette(lights, 0),
+    ),
+  ),
+  danger: (
+    background-color: get-palette(danger, 500),
+    border-color: get-palette(danger, 500),
+    text: get-palette(lights, 0),
+    hover: (
+      background-color: get-palette(danger, 700),
+      border-color: get-palette(danger, 700),
+      text: get-palette(lights, 0),
+    ),
+    focus: (
+      background-color: get-palette(danger, 700),
+      border-color: get-palette(danger, 200),
+      text: get-palette(lights, 0),
+    ),
+    active: (
+      background-color: get-palette(danger, 700),
+      border-color: get-palette(danger, 900),
+      text: get-palette(lights, 0),
+    ),
+  ),
+  danger-light: (
+    background-color: get-palette(lights, 0),
+    border-color: get-palette(darks, 100),
+    text: get-palette(danger, 500),
+    hover: (
+      background-color: get-palette(danger, 500),
+      border-color: get-palette(danger, 500),
+      text: get-palette(lights, 0),
+    ),
+    focus: (
+      background-color: get-palette(danger, 700),
+      border-color: get-palette(danger, 200),
+      text: get-palette(lights, 0),
+    ),
+    active: (
+      background-color: get-palette(danger, 700),
+      border-color: get-palette(danger, 900),
+      text: get-palette(lights, 0),
+    ),
+  ),
+  highlight: (
+    background-color: get-palette(lights, 0),
+    border-color: get-palette(darks, 100),
+    text: get-palette(warning, 500),
+    hover: (
+      background-color: get-palette(warning, 500),
+      border-color: get-palette(darks, 100),
+      text: get-palette(lights, 0),
+    ),
+    focus: (
+      background-color: get-palette(lights, 0),
+      border-color: get-palette(darks, 900),
+      text: get-palette(warning, 500),
+    ),
+    active: (
+      background-color: get-palette(lights, 0),
+      border-color: get-palette(darks, 900),
+      text: get-palette(warning, 500),
+    ),
+  ),
+  disabled: (
+    background-color: get-palette(lights, 300),
+    border-color: get-palette(darks, 100),
+    text: get-palette(darks, 300),
+  ),
+  low-priority: (
+    background-color: get-palette(lights, 0),
+    border-color: get-palette(darks, 100),
+    text: get-palette(darks, 600),
+    hover: (
+      background-color: get-palette(teal),
+      border-color: get-palette(darks, 100),
+      text: get-palette(lights, 0),
+    ),
+    focus: (
+      background-color: get-palette(lights, 0),
+      border-color: get-palette(blue, 300),
+      text: get-palette(darks, 600),
+    ),
+    active: (
+      background-color: get-palette(teal),
+      border-color: get-palette(teal, 700),
+      text: get-palette(lights, 0),
+    ),
+  ),
+);

@@ -1,0 +1,163 @@
+@import "@/styles/variables/text";
+
+.the-button {
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  height: 40px;
+  justify-content: center;
+  padding: 8px 16px;
+  background: get-palette(lights, 0) !important;
+
+  /* Make sure button text is not selectable */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  -webkit-user-select: none; /* Safari */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+  @include button-style(low-priority);
+
+  span {
+    display: flex;
+  }
+
+  .transition {
+    transition:
+      0.3s cubic-bezier(0.25, 0.8, 0.5, 1),
+      visibility 0s;
+  }
+
+  &.large {
+    @extend .button-large;
+
+    &.has-icon-prefix {
+      padding: 8px 16px 8px 8px;
+    }
+
+    &.has-icon-suffix {
+      padding: 8px 8px 8px 16px;
+    }
+
+    &.icon {
+      width: 48px;
+    }
+  }
+
+  &.small {
+    @extend .button-small;
+
+    height: 32px;
+  }
+
+  &.small.icon {
+    padding: 4px;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.full-height {
+    border-radius: 0;
+    height: 100% !important;
+  }
+
+  &.primary {
+    @include button-style(primary);
+  }
+
+  // Background and border colors are defined as !important on ".v-application .secondary"
+  // Use .ow-button-ds._secondary to override without inheriting from it
+  &._secondary {
+    @include button-style(secondary);
+  }
+
+  &.danger {
+    @include button-style(danger);
+  }
+
+  &.danger-light {
+    @include button-style(danger-light);
+  }
+
+  &.highlight {
+    @include button-style(highlight);
+  }
+
+  &.disabled {
+    background-color: get-value(button, disabled, background-color);
+    border: solid 1px get-value(button, disabled, border-color);
+    color: get-value(button, disabled, text) !important;
+    pointer-events: none;
+
+    i {
+      color: get-value(button, disabled, text) !important;
+    }
+  }
+
+  &.is-tile {
+    border-radius: 0;
+  }
+
+  &.is-borderless {
+    outline: none;
+    border: none;
+  }
+
+  &.is-flat {
+    background: none !important;
+    box-shadow: none;
+    outline: none !important;
+
+    i {
+      color: get-palette(darks, 600) !important;
+    }
+
+    &:hover {
+      i {
+        color: get-palette(blue, 500) !important;
+      }
+    }
+  }
+
+  &.is-text {
+    padding: 2px;
+    margin: 0;
+  }
+
+  &.disabled.is-flat {
+    background: none !important;
+    box-shadow: none;
+    border: none;
+    outline: none !important;
+
+    i {
+      color: get-palette(darks, 300) !important;
+    }
+  }
+
+  &.icon {
+    padding: 8px;
+    &:hover {
+      svg path {
+        filter: brightness(0.9) !important;
+        fill: revert-layer;
+      }
+    }
+  }
+
+  // Override v-icon styles
+  i.v-icon {
+    font-size: 20px;
+    line-height: unset;
+  }
+
+  label {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,187 @@
+/***
+ * Design System Text Classes
+ */
+.headers-display {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.headers-h1-page-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.headers-h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.headers-h3-card-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.body-highlight {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.body-regular {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.body-regular-small {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.body-italic {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.button-large {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.button-small {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.caption-highlight {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.caption-italic {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.caption-regular {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.accents-highlight {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  line-height: 16px;
+}
+
+.accents-link-text {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.accents-link-text-underline {
+  @extend .accents-link-text;
+  text-decoration: underline;
+}
+
+.accents-small {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.1px;
+  line-height: 16px;
+}
+
+.accents-smallest {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 0.1px;
+  line-height: 16px;
+}
+
+.accents-italic {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.label-caps-medium {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.label-caps-small {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.label-caps-smallest {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.label-caps-xx-small {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+a.link-text {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}

@@ -1,0 +1,97 @@
+/// Apply the appropriate styles to the states of the specified type of button.
+/// This is imported through vite and available to just use in any scss file.
+/// @param {string} $type - The type of button primary, secondary, low-priority.
+/// @example
+///  .my-class {
+///     @include button-style(primary);
+///  }
+///
+
+@mixin button-style($type) {
+  background-color: get-value(button, $type, background-color) !important;
+  outline: solid 1px get-value(button, $type, border-color);
+  outline-offset: -1px;
+  border: none;
+  color: get-value(button, $type, text) !important;
+
+  i {
+    color: get-value(button, $type, text) !important;
+  }
+
+  &:hover {
+    @extend .transition;
+    background-color: get-value(
+      button,
+      $type,
+      hover,
+      background-color
+    ) !important;
+    outline: solid 1px get-value(button, $type, hover, border-color) !important;
+    outline-offset: -1px;
+    border: none;
+    color: get-value(button, $type, hover, text) !important;
+
+    i {
+      color: get-value(button, $type, hover, text) !important;
+    }
+
+    svg path {
+      fill: get-value(button, $type, hover, text);
+    }
+  }
+
+  &:focus {
+    @extend .transition;
+    background-color: get-value(
+      button,
+      $type,
+      focus,
+      background-color
+    ) !important;
+    outline: solid 1px get-value(button, $type, focus, border-color);
+    outline-offset: -1px;
+    border: none;
+    box-shadow:
+      inset -1px 0 0 get-value(button, $type, focus, border-color),
+      inset 0 -1px 0 get-value(button, $type, focus, border-color),
+      inset 1px 0 0 get-value(button, $type, focus, border-color),
+      inset 0 1px 0 get-value(button, $type, focus, border-color);
+    color: get-value(button, $type, focus, text) !important;
+
+    i {
+      color: get-value(button, $type, focus, text) !important;
+    }
+
+    svg path {
+      @extend .transition;
+      color: get-value(button, $type, focus, text) !important;
+    }
+  }
+
+  &:active {
+    @extend .transition;
+    background-color: get-value(
+      button,
+      $type,
+      active,
+      background-color
+    ) !important;
+    outline: solid 1px get-value(button, $type, active, border-color);
+    outline-offset: -1px;
+    border: none;
+    box-shadow:
+      inset -3px 0 0 get-value(button, $type, active, border-color),
+      inset 0 -3px 0 get-value(button, $type, active, border-color),
+      inset 3px 0 0 get-value(button, $type, active, border-color),
+      inset 0 3px 0 get-value(button, $type, active, border-color);
+    color: get-value(button, $type, active, text) !important;
+
+    i {
+      color: get-value(button, $type, active, text) !important;
+    }
+
+    svg path {
+      color: get-value(button, $type, active, text) !important;
+    }
+  }
+}
