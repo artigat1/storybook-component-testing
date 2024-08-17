@@ -1,5 +1,5 @@
-# Vue 3 + TypeScript + Vite
+# Storybook Component Testing
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+[Storybook](https://storybook.js.org/) is a tool for developing UI components in isolation. It is a great way to develop and test components in isolation. It is also a great way to document components. This project is a simple example of how to use Storybook to develop and test components.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+[Play functions](https://storybook.js.org/docs/writing-stories/play-function) can be added to these stories to test the components. The Storybook [test runner](https://storybook.js.org/docs/writing-tests/test-runner) can be used to run these as tests.
