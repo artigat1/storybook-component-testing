@@ -98,6 +98,16 @@ export const Disabled: Story = {
     },
     template: '<the-button v-bind="args">Click me!</the-button>',
   }),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+
+    // See https://storybook.js.org/docs/essentials/actions#automatically-matching-args to learn
+    // how to setup logging in the Actions panel
+    const button = canvas.getByRole('button');
+
+    // 👇 Assert DOM structure
+    await expect(button).toBeDisabled();
+  },
 }
 
 export const Loading: Story = {
@@ -112,4 +122,14 @@ export const Loading: Story = {
     },
     template: '<the-button v-bind="args">Click me!</the-button>',
   }),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+
+    // See https://storybook.js.org/docs/essentials/actions#automatically-matching-args to learn
+    // how to setup logging in the Actions panel
+    const button = canvas.getByRole('button');
+
+    // 👇 Assert DOM structure
+    await expect(button.textContent).toBe('Loading ...');
+  },
 }
