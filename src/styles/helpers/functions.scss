@@ -1,4 +1,4 @@
-@import "../variables/palette";
+@import '../variables/palette';
 
 @function deep-map-get($map, $list...) {
   @each $key in $list {

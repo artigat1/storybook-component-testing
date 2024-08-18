@@ -5,5 +5,5 @@
   "trailingComma": "es5",
   "printWidth": 80,
   "vueIndentScriptAndStyle": true,
-  "singleAttributePerLine": true,
+  "singleAttributePerLine": true
 }

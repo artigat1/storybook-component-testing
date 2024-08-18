@@ -1,0 +1,55 @@
+.loading-text {
+  &__dot1,
+  &__dot2,
+  &__dot3 {
+    visibility: hidden;
+  }
+
+  &__dot1 {
+    animation: dot1 2s infinite;
+  }
+
+  &__dot2 {
+    animation: dot2 2s infinite;
+  }
+
+  &__dot3 {
+    animation: dot3 2s infinite;
+  }
+}
+
+@keyframes dot1 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes dot2 {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes dot3 {
+  0% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}

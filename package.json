@@ -8,10 +8,15 @@
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js,ts,vue,scss,json}\"",
-    "format:check": "prettier --check \"src/**/*.{js,ts,vue,scss,json}\""
+    "format:check": "prettier --check \"src/**/*.{js,ts,vue,scss,json}\"",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test-storybook": "test-storybook"
   },
   "dependencies": {
+    "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/font": "^7.4.47",
+    "@mdi/js": "^7.4.47",
     "material-design-icons-iconfont": "^6.7.0",
     "sass": "^1.77.8",
     "typeface-ibm-plex-sans": "^1.1.13",
@@ -19,8 +24,19 @@
     "vue": "^3.4.37"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-interactions": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-onboarding": "^8.2.9",
+    "@storybook/blocks": "^8.2.9",
+    "@storybook/test": "^8.2.9",
+    "@storybook/test-runner": "^0.19.1",
+    "@storybook/vue3": "^8.2.9",
+    "@storybook/vue3-vite": "^8.2.9",
     "@vitejs/plugin-vue": "^5.1.2",
     "prettier": "^3.3.3",
+    "storybook": "^8.2.9",
     "typescript": "^5.5.3",
     "vite": "^5.4.1",
     "vue-tsc": "^2.0.29"
