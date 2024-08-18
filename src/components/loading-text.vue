@@ -1,7 +1,7 @@
 <template>
   <span
     class="loading-text"
-    data-test="loading-text"
+    data-testid="loading-text"
   >
     {{ text }}
 

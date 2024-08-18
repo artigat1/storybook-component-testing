@@ -11,7 +11,8 @@
     "format:check": "prettier --check \"src/**/*.{js,ts,vue,scss,json}\"",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test-storybook": "test-storybook"
+    "test-storybook": "test-storybook --watchAll",
+    "chromatic": "npx chromatic --project-token=from_1password"
   },
   "dependencies": {
     "@jamescoyle/vue-icon": "^0.1.2",
@@ -35,6 +36,7 @@
     "@storybook/vue3": "^8.2.9",
     "@storybook/vue3-vite": "^8.2.9",
     "@vitejs/plugin-vue": "^5.1.2",
+    "chromatic": "^11.7.1",
     "prettier": "^3.3.3",
     "storybook": "^8.2.9",
     "typescript": "^5.5.3",
